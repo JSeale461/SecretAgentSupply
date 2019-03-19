@@ -1,23 +1,106 @@
 /* style.css */
 html {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   /*background-color: black;*/
 }
-.header {
+.site {
+  width: 960px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 760px) {
+  .site {
+    width: auto;
+  }
+  .menubar .menuitems {
+    display: none;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .menubar span {
+    display: none;
+  }
+}
+.header{
   display: flex;
   background-color: black;
-  display: flex;
-  height: 5rem;
-  width: auto;
+  color: white;
   align-items: center;
-  padding-left: 0.75rem;
+  font-size: 18px;
+  /*padding: 0.66rem 1rem 0.66rem 0.75rem;*/
+}
+
+.logo {
+  display: flex;
+  height: 1.5rem;
+  width: auto;
+  object-fit: contain;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+.header span {
+  color: white;
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+.banner {
+  display: flex;
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 25rem;
+}
+
+.notice {
+  max-width: 20rem;
+  height: auto;
+  background-color: black;
+}
+.new {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 0.25rem;
+}
+.bikes {
+  color: white;
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-bottom: 2.5rem;
 
 }
-.logo {
-  height: 54px;
-  width: auto;
-  padding-right: 1rem;
+.menubar {
+  display: flex;
+  background-color: firebrick;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menuitems {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+.menubar span {
+  color: white;
+}
+.menubar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75em 0;
+  list-style: none;
 }
